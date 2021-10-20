@@ -1,0 +1,7 @@
+CREATE DATABASE input;
+USE input;
+CREATE TABLE sentiment(
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    sentence VARCHAR(500) NOT NULL,
+    PRIMARY KEY(id)
+);

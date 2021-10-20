@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="line"></div>
+    <div class="line"></div>
+    <nav>
+        <h2>Attendance System</h2>
+    </nav>
+    <div class="line"></div>
+     <div class="line"></div>  
+
+     <div class="container">
+        <form action = "{{url_for('home')}}" method = "POST">
+            <label for="file1">Enter Your Attendance File Here:</label><br>
+            <input type="file" id="file1" name="file1"><br> 
+            <input type="submit" class="enter" value="Enter" class="btn text-white btn-block btn-success fs-4">
+        </form>
+        <form action="{{url_for('static', filename = 'output/results.csv')}}">
+            <button type="submit" class="enter" class="btn btn-success reduce_margin downloadBtn">Download attendance sheet</button>
+        </form>
+     </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+body{
+    font-family: 'Merriweather', serif;
+}
+nav{
+    background-color:rgb(231, 19, 90) ;
+    color: white;
+    display: flex;
+}
+nav h2{
+    margin: auto;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: lighter;
+    justify-content: center;
+    padding: 8px;
+}
+.container{
+    display: flex;
+}
+.container form{
+    border: 2px solid rgb(231, 19, 90);
+    border-radius: 5px;
+    margin:60px auto;
+    justify-content: center;
+    align-items: center;
+    padding: 45px;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow:2px rgb(221, 176, 191);
+    
+}
+.container form input {
+    width: 600px;
+    height: 40px;
+    font-size: 1.5rem;
+    padding: 4px;
+    margin: auto 10px;
+    justify-content: center;
+}
+.container form .enter {
+    margin: auto 7px;
+    border:2px solid rgb(231, 19, 90);
+    border-radius: 20px;
+    padding: 5px;
+    background-color: white;
+    color: rgb(231, 19, 90);
+    font-size: 1.5rem;
+    font-weight: bold;
+    justify-content: center;
+}
+.container form .enter:hover {
+    color: white;
+    background-color: rgb(231, 19, 90);
+}
+.result{
+    display: flex;
+    color: rgb(138, 6, 50);
+    font-size: 2rem;
+}
+.result p{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}

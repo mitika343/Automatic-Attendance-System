@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='../static/style.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <h2>Sentiment Analysis</h2>
+    </nav>
+    <div class="container">
+        <form action = "{{url_for('home')}}" method = "POST">
+            <label for="sentence">Enter Your Text Here:</label><br>
+            <input type="text" id="sentence" name="sentence"><br> 
+            <input type="submit" value="Enter" class="enter btn text-white btn-block btn-success fs-4">
+        </form>
+    </div>
+    <div class="result">
+        <p class="r1">
+            Sentiment of the given input is : {{msg}}
+            
+        </p>
+
+    </div>
+</body>
+</html>
